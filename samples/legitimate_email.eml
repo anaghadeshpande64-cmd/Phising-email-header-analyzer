@@ -1,0 +1,36 @@
+X-Sample-Data: SYNTHETIC EDUCATIONAL SAMPLE - fictional domains and reserved documentation IPs only
+Return-Path: <bounce@examplebank.example>
+Received: from mx.recipient.example (localhost [127.0.0.1])
+	by filter.recipient.example with ESMTP id 4abc123;
+	Tue, 10 Nov 2026 09:15:04 +0000
+Received: from smtp-out.examplebank.example (smtp-out.examplebank.example [203.0.113.25])
+	by mx.recipient.example with ESMTPS id 4abc122
+	(version=TLSv1.3 cipher=TLS_AES_256_GCM_SHA384);
+	Tue, 10 Nov 2026 09:15:03 +0000
+Received: from app-server.examplebank.example (app-server.examplebank.example [192.0.2.10])
+	by smtp-out.examplebank.example with ESMTPS id 9f8e7d
+	(version=TLSv1.3);
+	Tue, 10 Nov 2026 09:15:01 +0000
+Authentication-Results: mx.recipient.example;
+	spf=pass (mx.recipient.example: domain of bounce@examplebank.example designates 203.0.113.25 as permitted sender) smtp.mailfrom=bounce@examplebank.example;
+	dkim=pass (signature verified) header.d=examplebank.example header.s=sel1;
+	dmarc=pass (p=REJECT sp=REJECT) header.from=examplebank.example
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=examplebank.example; s=sel1;
+	h=from:to:subject:date:message-id; bh=U1lOVEhFVElDQk9EWUhBU0g=; b=U1lOVEhFVElDU0lHTkFUVVJF
+From: "ExampleBank Statements" <statements@examplebank.example>
+To: Alex Student <alex.student@recipient.example>
+Subject: Your October statement is ready
+Date: Tue, 10 Nov 2026 09:14:58 +0000
+Message-ID: <20261110091458.1a2b3c@app-server.examplebank.example>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+SYNTHETIC SAMPLE EMAIL - not a real message.
+
+Hello Alex,
+
+Your October statement is now available in online banking.
+Sign in through the ExampleBank app or by typing the address into your browser.
+We will never ask for your password by email.
+
+ExampleBank (fictional)

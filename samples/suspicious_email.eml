@@ -1,0 +1,25 @@
+X-Sample-Data: SYNTHETIC EDUCATIONAL SAMPLE - fictional domains and reserved documentation IPs only
+Return-Path: <winner@lucky-rewards.example.com>
+Received: from mx.recipient.example (localhost [127.0.0.1])
+	by filter.recipient.example with ESMTP id 3kk002;
+	Wed, 11 Nov 2026 14:30:07 +0000
+Received: from relay.lucky-rewards.example.com (relay.lucky-rewards.example.com [198.51.100.200])
+	by mx.recipient.example with ESMTP id 3kk001;
+	Wed, 11 Nov 2026 14:30:05 +0000
+Received: from [10.0.0.5] (workstation.internal [10.0.0.5])
+	by relay.lucky-rewards.example.com with ESMTP id 2dd777;
+	Wed, 11 Nov 2026 14:30:03 +0000
+Authentication-Results: mx.recipient.example;
+	spf=none (no SPF record found for lucky-rewards.example.com) smtp.mailfrom=winner@lucky-rewards.example.com
+From: "Prize Desk" <winner@lucky-rewards.example.com>
+To: alex.student@recipient.example
+Reply-To: <claims-office@rewards-claims.example.org>
+Subject: You may have won a reward
+Date: Wed, 11 Nov 2026 14:29:58 +0000
+Message-ID: <77aa88bb@relay.lucky-rewards.example.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+SYNTHETIC SAMPLE EMAIL - incomplete authentication results (no DKIM or DMARC verdict).
+
+Congratulations! Reply to claim your reward. (Fictional training example.)

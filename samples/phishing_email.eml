@@ -1,0 +1,33 @@
+X-Sample-Data: SYNTHETIC EDUCATIONAL SAMPLE - fictional domains and reserved documentation IPs only
+Return-Path: <mailer@bulk-sender.example.org>
+Received: from mx.recipient.example (localhost [127.0.0.1])
+	by filter.recipient.example with ESMTP id 7zz991;
+	Tue, 10 Nov 2026 02:12:20 +0000
+Received: from mail.examplebank.example (unknown [203.0.113.99])
+	by mx.recipient.example with ESMTP id 7zz990;
+	Tue, 10 Nov 2026 01:03:12 +0000
+Received: from [198.51.100.77] (unknown [198.51.100.77])
+	by relay1.cheap-host.example.org with ESMTP id 55aa11;
+	Tue, 10 Nov 2026 02:11:40 +0000
+X-Originating-IP: [198.51.100.77]
+Authentication-Results: mx.recipient.example;
+	spf=fail (mx.recipient.example: domain of bulk-sender.example.org does not designate 203.0.113.99 as permitted sender) smtp.mailfrom=mailer@bulk-sender.example.org;
+	dkim=fail (signature verification failed) header.d=examp1ebank.example header.s=default;
+	dmarc=fail (p=NONE) header.from=examp1ebank.example
+From: "ExampleBank Security Team" <security@examp1ebank.example>
+To: alex.student@recipient.example
+Reply-To: <support-desk@secure-verify.example.net>
+Subject: URGENT: Your account will be suspended - verify now
+Date: Tue, 10 Nov 2026 02:09:00 +0000
+Message-ID: <d41d8cd98f00b204@relay1.cheap-host.example.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+
+SYNTHETIC SAMPLE PHISHING EMAIL - for education only. Domains are fictional.
+
+Dear customer,
+
+We detected unusual activity. Your account will be suspended in 24 hours
+unless you confirm your details: http://examp1ebank-verify.example/login
+
+ExampleBank Security Team (this is a fictional training example)

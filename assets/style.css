@@ -1,0 +1,40 @@
+/* Cybersecurity-themed styling for the Streamlit dashboard */
+:root {
+  --bg: #0a1220; --panel: #111c2e; --panel-2: #16243a; --line: #243652;
+  --text: #e6edf6; --muted: #8fa3bd; --accent: #36d1dc;
+  --pass: #2ecc71; --fail: #ff5c5c; --warn: #f5b942; --unknown: #8fa3bd;
+}
+.stApp { background: radial-gradient(1200px 600px at 10% -10%, #14284a 0%, var(--bg) 55%); color: var(--text); }
+[data-testid="stSidebar"] { background: #0c1627; border-right: 1px solid var(--line); }
+h1, h2, h3 { letter-spacing: .2px; }
+.hero { padding: 18px 22px; border: 1px solid var(--line); border-radius: 14px;
+  background: linear-gradient(135deg, #12223b 0%, #0d192b 100%); margin-bottom: 14px; }
+.hero h1 { margin: 0; font-size: 1.7rem; color: var(--text); }
+.hero p { margin: 4px 0 0; color: var(--muted); font-size: .95rem; }
+.hero .tag { color: var(--accent); font-weight: 600; font-size: .75rem; letter-spacing: 1.5px; text-transform: uppercase; }
+
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; height: 100%; }
+.card .label { color: var(--muted); font-size: .72rem; letter-spacing: 1.2px; text-transform: uppercase; }
+.card .value { font-size: 1.5rem; font-weight: 700; margin: 4px 0 2px; word-break: break-word; }
+.card.compact .value { font-size: 1rem; line-height: 1.6; padding: 4px 0; word-break: break-all; }
+.card .sub { color: var(--muted); font-size: .8rem; word-break: break-word; }
+.status-PASS { border-left: 5px solid var(--pass); } .status-PASS .value { color: var(--pass); }
+.status-FAIL { border-left: 5px solid var(--fail); } .status-FAIL .value { color: var(--fail); }
+.status-NONE { border-left: 5px solid var(--warn); } .status-NONE .value { color: var(--warn); }
+.status-UNKNOWN { border-left: 5px solid var(--unknown); } .status-UNKNOWN .value { color: var(--unknown); }
+.risk-LOW { border-left: 5px solid var(--pass); } .risk-LOW .value { color: var(--pass); }
+.risk-MEDIUM { border-left: 5px solid var(--warn); } .risk-MEDIUM .value { color: var(--warn); }
+.risk-HIGH { border-left: 5px solid var(--fail); } .risk-HIGH .value { color: var(--fail); }
+
+.indicator { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin-bottom: 8px; }
+.indicator .t { font-weight: 600; }
+.indicator .e { color: var(--muted); font-size: .86rem; margin-top: 3px; }
+.indicator .ev { font-family: ui-monospace, Consolas, monospace; font-size: .78rem; color: #9fd8de; margin-top: 4px; word-break: break-all; }
+.sev { display: inline-block; font-size: .68rem; font-weight: 700; padding: 1px 8px; border-radius: 20px; margin-right: 8px; letter-spacing: .8px; }
+.sev-high { background: #ff5c5c22; color: var(--fail); border: 1px solid var(--fail); }
+.sev-medium { background: #f5b94222; color: var(--warn); border: 1px solid var(--warn); }
+.sev-low { background: #36d1dc22; color: var(--accent); border: 1px solid var(--accent); }
+.sev-info { background: #8fa3bd22; color: var(--muted); border: 1px solid var(--muted); }
+.notice { border: 1px dashed var(--line); border-radius: 10px; padding: 10px 14px; color: var(--muted); font-size: .85rem; background: #0d1829; }
+.good { color: var(--pass); }
+pre, code { font-family: ui-monospace, Consolas, monospace !important; }
